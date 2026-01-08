@@ -491,7 +491,29 @@ footer {
     /* Could add mobile menu later if needed */
 
     .hero-title {
-        font-size: 3rem;
+        font-size: 3.5rem;
+        margin-top: 1rem;
+    }
+
+    .hero-section {
+        padding-top: 120px !important;
+        /* Revert alignment to center for safety */
+    }
+
+    /* Restore stacked full-width buttons for HERO only */
+    .buttons-row {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+        /* Add side padding */
+    }
+
+    .buttons-row .btn-primary,
+    .buttons-row .btn-secondary {
+        width: 100% !important;
+        justify-content: center;
+        max-width: none !important;
+        /* Override the global constraint if any */
     }
 
     .grid-3,
@@ -500,16 +522,7 @@ footer {
         gap: 2rem;
     }
 
-    .buttons-row {
-        flex-direction: column;
-        width: 100%;
-    }
 
-    .btn-primary,
-    .btn-secondary {
-        width: 100%;
-        justify-content: center;
-    }
 
     .bg-slide {
         filter: brightness(0.25);

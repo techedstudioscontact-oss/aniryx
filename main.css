@@ -118,6 +118,22 @@ nav {
     padding: 0 2rem;
 }
 
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    nav .btn-primary {
+        padding: 0.5rem 1rem !important;
+        font-size: 0.8rem !important;
+        height: auto;
+    }
+}
+
 .logo {
     font-family: var(--font-heading);
     font-weight: 700;

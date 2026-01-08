@@ -197,7 +197,8 @@ nav {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 0.75rem;
+    /* Smaller padding */
     background: rgba(255, 85, 0, 0.1);
     border: 1px solid rgba(255, 85, 0, 0.3);
     border-radius: 50px;
@@ -205,6 +206,8 @@ nav {
     color: var(--orange-primary);
     font-family: var(--font-heading);
     font-weight: 600;
+    font-size: 0.7rem;
+    /* Smaller font text */
     letter-spacing: 0.05em;
 }
 

@@ -118,40 +118,6 @@ nav {
     padding: 0 2rem;
 }
 
-@media (max-width: 768px) {
-    .nav-container {
-        padding: 0 1rem;
-    }
-
-    .logo {
-        font-size: 1.1rem;
-        /* Smaller logo */
-    }
-
-    nav .btn-primary {
-        padding: 6px 12px !important;
-        font-size: 0.7rem !important;
-        height: auto;
-        min-width: 0 !important;
-        max-width: 140px !important;
-        /* Force max width */
-        width: auto !important;
-        white-space: nowrap;
-    }
-
-    .hero-section {
-        padding-top: 160px !important;
-        /* Force content down */
-        align-items: flex-start;
-        /* Align closer to top of padded area */
-    }
-
-    .hero-title {
-        font-size: 3.5rem;
-        margin-top: 1rem;
-    }
-}
-
 .logo {
     font-family: var(--font-heading);
     font-weight: 700;

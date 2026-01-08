@@ -128,9 +128,16 @@ nav {
     }
 
     nav .btn-primary {
-        padding: 0.5rem 1rem !important;
-        font-size: 0.8rem !important;
+        padding: 0.4rem 0.8rem !important;
+        font-size: 0.7rem !important;
         height: auto;
+        min-width: auto;
+        /* Allow shrinking */
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+        /* Slightly smaller to be safe */
     }
 }
 

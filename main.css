@@ -488,10 +488,17 @@ footer {
         display: none;
     }
 
-    /* Could add mobile menu later if needed */
+    /* Optimize Nav Button for Mobile */
+    nav .btn-primary {
+        width: auto;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
 
+    /* Bigger Mobile Title */
     .hero-title {
-        font-size: 3rem;
+        font-size: 4rem;
+        line-height: 1.1;
     }
 
     .grid-3,
@@ -505,8 +512,9 @@ footer {
         width: 100%;
     }
 
-    .btn-primary,
-    .btn-secondary {
+    /* Only stack hero buttons, keep nav button normal */
+    .hero-content .btn-primary,
+    .hero-content .btn-secondary {
         width: 100%;
         justify-content: center;
     }

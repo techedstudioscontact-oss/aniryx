@@ -165,16 +165,18 @@ nav {
 .hero-section {
     min-height: 100vh;
     display: flex;
-    align-items: flex-start;
-    /* changed from center to prevent top clipping */
-    justify-content: center;
+    flex-direction: column;
+    /* Ensure vertical stacking */
+    align-items: center;
+    /* Center horizontally in column mode */
+    justify-content: flex-start;
+    /* Start from top */
     text-align: center;
     position: relative;
     padding: 0 1rem;
-    padding-top: 140px;
-    /* Increased padding to clear navbar */
+    padding-top: 200px;
+    /* Maximum clearance */
     padding-bottom: 4rem;
-    /* Add bottom padding for scroll */
 }
 
 .hero-content {

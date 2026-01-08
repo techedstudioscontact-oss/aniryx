@@ -163,7 +163,7 @@ nav {
    HERO SECTION
 ======================================== */
 .hero-section {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,8 +197,7 @@ nav {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.25rem 0.75rem;
-    /* Smaller padding */
+    padding: 0.5rem 1rem;
     background: rgba(255, 85, 0, 0.1);
     border: 1px solid rgba(255, 85, 0, 0.3);
     border-radius: 50px;
@@ -206,8 +205,6 @@ nav {
     color: var(--orange-primary);
     font-family: var(--font-heading);
     font-weight: 600;
-    font-size: 0.7rem;
-    /* Smaller font text */
     letter-spacing: 0.05em;
 }
 
@@ -491,17 +488,10 @@ footer {
         display: none;
     }
 
-    /* Optimize Nav Button for Mobile */
-    nav .btn-primary {
-        width: auto;
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
-    }
+    /* Could add mobile menu later if needed */
 
-    /* Bigger Mobile Title */
     .hero-title {
-        font-size: 4rem;
-        line-height: 1.1;
+        font-size: 3rem;
     }
 
     .grid-3,
@@ -515,9 +505,8 @@ footer {
         width: 100%;
     }
 
-    /* Only stack hero buttons, keep nav button normal */
-    .hero-content .btn-primary,
-    .hero-content .btn-secondary {
+    .btn-primary,
+    .btn-secondary {
         width: 100%;
         justify-content: center;
     }

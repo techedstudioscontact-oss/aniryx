@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Aniryx | Premium Ad-Free Anime Streaming - The Neural Gateway</title>
+    <title>Aniryx | Premium Ad-Free Anime Streaming</title>
     <meta name="description"
-        content="The clutter is obsolete. The ads are deleted. Welcome to the Premium Neural Gateway. Aniryx is the ultimate ad-free anime streaming platform with a cyberpunk interface.">
+        content="The clutter is obsolete. The ads are deleted. Welcome to the Premium Neural Gateway. Aniryx is the ultimate ad-free anime streaming platform.">
     <meta name="keywords"
-        content="Aniryx, Anime, Ad-free Anime, Premium Anime Streaming, Anime App, Cyberpunk Anime, Online Anime, Watch Anime Free">
+        content="Aniryx, Anime, Ad-free Anime, Premium Anime Streaming, Anime App, Online Anime, Watch Anime Free">
     <meta name="author" content="Teched Studios">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="REDpeiWCDT4wzu8fGXVkR10Nw0N-3m8BfE7gg9v55po" />
@@ -18,7 +18,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://aniryx.com/">
-    <meta property="og:title" content="Aniryx - The Premium Neural Gateway for Anime">
+    <meta property="og:title" content="Aniryx - Premium Ad-Free Anime">
     <meta property="og:description"
         content="The clutter is obsolete. The ads are deleted. Experience the future of anime streaming locally on your device.">
     <meta property="og:image" content="https://aniryx.com/og-image.jpg">
@@ -29,7 +29,7 @@
     <meta property="twitter:description"
         content="The clutter is obsolete. The ads are deleted. Welcome to the Premium Neural Gateway.">
 
-    <!-- Structured Data (JSON-LD) for Search Engines -->
+    <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -42,7 +42,7 @@
         "price": "9",
         "priceCurrency": "INR"
       },
-      "description": "The clutter is obsolete. The ads are deleted. Welcome to the Premium Neural Gateway. Aniryx provides an ad-free, premium anime streaming experience with a high-tech cyberpunk interface.",
+      "description": "The clutter is obsolete. The ads are deleted. Welcome to the Premium Neural Gateway. Aniryx provides an ad-free, premium anime streaming experience.",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
@@ -68,462 +68,220 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Syncopate:wght@400;700&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Outfit:wght@300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="selection:bg-cyan-500/30 selection:text-cyan-200">
+<body>
 
     <!-- Background Image Slider -->
-    <div class="bg-slider">
+    <div class="bg-slider text-orange">
         <div class="bg-slide active" style="background-image: url('anime1.jpg');"></div>
         <div class="bg-slide" style="background-image: url('anime2.jpg');"></div>
         <div class="bg-slide" style="background-image: url('anime3.jpg');"></div>
         <div class="bg-slide" style="background-image: url('anime4.jpg');"></div>
     </div>
 
-    <!-- OVERLAYS -->
-    <div class="noise-overlay"></div>
-    <div class="vignette"></div>
-    <div class="scroll-progress" id="scroll-progress"></div>
-
-    <!-- CURSOR -->
-    <div id="cursor-dot"></div>
-    <div id="cursor-outline"></div>
-
-    <!-- BACKGROUND -->
-    <div class="cyber-grid-container">
-        <div class="cyber-grid"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-[#050507] via-transparent to-transparent"></div>
-    </div>
-
-    <!-- HUD DATA -->
-    <div class="fixed top-24 left-8 text-[10px] text-cyan-500/40 font-code hidden lg:block z-40 select-none">
-        <span class="animate-pulse">●</span> SYS_ONLINE<br>
-        NET_SPEED: 10GBPS<br>
-        ENCRYPTION: AES-256
-    </div>
-    <div
-        class="fixed bottom-8 right-8 text-[10px] text-cyan-500/40 font-code hidden lg:block z-40 text-right select-none">
-        LOC: 34.05.22<br>
-        RENDER: WEBGL_2.0<br>
-        BUILD: 2026.1.8
-    </div>
-
     <!-- NAVIGATION -->
-    <nav class="fixed w-full z-50 top-0 p-4 lg:p-6 backdrop-blur-md border-b border-white/5 bg-[#050507]/80">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-3 interactable">
-                <div class="relative">
-                    <div class="absolute inset-0 bg-cyan-500 blur-md opacity-20"></div>
-                    <i data-lucide="cpu" class="w-6 h-6 text-cyan-400 relative z-10"></i>
-                </div>
-                <span class="text-xl md:text-2xl font-cyber font-bold text-white tracking-[0.2em]">ANIRYX</span>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo text-white">
+                <i data-lucide="zap" class="text-orange w-6 h-6"></i>
+                ANIRYX
+            </a>
+
+            <div class="nav-items hidden md:flex text-gray-300">
+                <a href="#philosophy" class="nav-link">About</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#showcase" class="nav-link">Showcase</a>
             </div>
 
-            <div class="hidden md:flex gap-8 lg:gap-12 font-tech text-base lg:text-lg tracking-wider text-gray-400">
-                <a href="#philosophy" class="nav-link hover:text-cyan-400 transition-colors interactable">Protocol</a>
-                <a href="#features" class="nav-link hover:text-cyan-400 transition-colors interactable">Modules</a>
-                <a href="#access" class="nav-link hover:text-cyan-400 transition-colors interactable">Access</a>
-            </div>
-
-            <a href="#download-section" class="btn-magnetic interactable hidden sm:flex">
-                <span
-                    class="font-tech text-xs md:text-sm font-bold text-cyan-400 border border-cyan-500/30 px-4 py-2 bg-cyan-950/10 hover:bg-cyan-500/20 transition-all uppercase tracking-widest">
-                    [ Initiate_Download ]
-                </span>
+            <a href="#download-section" class="btn-primary">
+                Download App
             </a>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="relative min-h-[100dvh] flex flex-col justify-center items-center text-center px-4 md:px-6">
-
-        <div class="z-10 max-w-6xl mx-auto flex flex-col items-center justify-center h-full pt-16 md:pt-0">
-
-            <!-- Launch Badge Group -->
-            <div class="flex flex-col items-center gap-3 mb-8 interactable">
-                <div
-                    class="inline-flex items-center gap-3 px-5 py-2 border border-cyan-500/20 bg-[#0a0a0f]/80 backdrop-blur-md rounded-sm shadow-[0_0_15px_rgba(0,243,255,0.05)]">
-                    <span class="relative flex h-2 w-2">
-                        <span
-                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                        <span
-                            class="relative inline-flex rounded-full h-2 w-2 bg-cyan-400 shadow-[0_0_10px_#00f3ff]"></span>
-                    </span>
-                    <span
-                        class="text-cyan-400 text-[10px] md:text-xs font-bold font-tech tracking-[0.3em] uppercase">System
-                        Launch :: 2026</span>
-                </div>
-                <div
-                    class="text-[9px] text-gray-500 font-code uppercase tracking-widest hover:text-cyan-400 transition-colors cursor-pointer">
-                    Architect: <a href="https://share.google/fsx57W460BpqxLKUg" target="_blank"
-                        class="text-cyan-700 hover:text-cyan-400 transition-colors decoration-cyan-500/30 hover:underline underline-offset-4 font-bold">Teched
-                        Studios</a>
-                </div>
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="animate-pulse">●</span> SYSTEM ONLINE
             </div>
 
-            <!-- Hacker Text Title -->
-            <div class="mb-6 relative">
-                <h1 class="text-4xl md:text-7xl lg:text-[9rem] font-bold leading-[0.9] text-white font-cyber mix-blend-screen interactable tracking-tight text-center"
-                    id="hacker-text" data-value="ANIME UNCHAINED">
-                    ANIME UNCHAINED
-                </h1>
-                <!-- Glitch duplicate for effect -->
-                <h1 class="text-4xl md:text-7xl lg:text-[9rem] font-bold leading-[0.9] text-cyan-500/20 font-cyber absolute top-0 left-0 w-full h-full animate-pulse pointer-events-none blur-[2px]"
-                    style="z-index: -1;">
-                    ANIME UNCHAINED
-                </h1>
-            </div>
+            <h1 class="hero-title">ANIME<br><span class="text-orange">UNCHAINED</span></h1>
 
-            <p
-                class="text-base md:text-xl text-gray-400 max-w-2xl mx-auto font-light tracking-wide font-tech leading-relaxed reveal active mb-12">
-                The clutter is obsolete. The ads are deleted. <br>
-                Welcome to the <span
-                    class="text-cyan-400 font-medium shadow-cyan-500/20 drop-shadow-[0_0_5px_rgba(0,243,255,0.5)]">Premium
-                    Neural Gateway</span>.
+            <p class="hero-subtitle">
+                The clutter is obsolete. The ads are deleted.<br>
+                Welcome to the Premium Neural Gateway.
             </p>
 
-            <!-- Buttons -->
-            <div class="flex flex-col md:flex-row gap-6 md:gap-8 justify-center items-center reveal active w-full">
-                <a href="#download-section" class="btn-magnetic interactable group w-full md:w-auto">
-                    <div
-                        class="relative overflow-hidden bg-transparent border border-cyan-400 px-10 py-4 transition-all duration-300 group-hover:bg-cyan-400 group-hover:shadow-[0_0_30px_rgba(0,243,255,0.4)] w-full md:w-auto text-center">
-                        <div
-                            class="absolute inset-0 w-full h-full bg-cyan-400/10 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                        </div>
-                        <span
-                            class="relative font-tech text-lg font-bold tracking-widest text-cyan-400 group-hover:text-black">EXECUTE_INSTALL</span>
-                    </div>
+            <div class="buttons-row">
+                <a href="#download-section" class="btn-primary">
+                    <i data-lucide="download"></i> Install Now
                 </a>
-
-                <a href="#philosophy" class="btn-magnetic interactable group">
-                    <div
-                        class="px-8 py-4 flex items-center gap-3 text-gray-400 group-hover:text-white transition-colors">
-                        <span
-                            class="font-tech text-sm uppercase tracking-[0.2em] border-b border-transparent group-hover:border-white/50 pb-1">View
-                            Specs</span>
-                        <i data-lucide="chevron-down"
-                            class="w-4 h-4 group-hover:translate-y-1 transition-transform text-cyan-500"></i>
-                    </div>
+                <a href="#philosophy" class="btn-secondary">
+                    View Specs
                 </a>
             </div>
         </div>
-
-        <!-- Scroll Indicator -->
-        <a href="#philosophy" class="scroll-indicator interactable">
-            <span>Scroll</span>
-            <i data-lucide="chevron-down" class="w-6 h-6"></i>
-        </a>
-    </section>
+    </div>
 
     <!-- PHILOSOPHY SECTION -->
-    <section id="philosophy" class="py-32 px-6 relative border-t border-white/5 bg-[#030304]/60 backdrop-blur-sm">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+    <div class="section" id="philosophy">
+        <div class="philosophy-grid">
+            <div class="philosophy-text">
+                <span class="section-subtitle">Our Philosophy</span>
+                <h2>The Web Is <span class="text-orange">Compromised</span></h2>
+                <div class="highlight-box">
+                    <p class="text-white font-medium">Pop-ups. Trackers. Low-res streams. The current ecosystem is
+                        hostile to the user.</p>
+                </div>
+                <p>You are not a product. Aniryx is your shield against the noise of the modern web.</p>
 
-                <!-- Text Content -->
-                <div class="reveal order-2 lg:order-1 flex flex-col items-start text-left">
-                    <div
-                        class="flex items-center gap-2 text-cyan-500 text-xs font-code mb-6 border-l-2 border-cyan-500 pl-3">
-                        <span>ERROR_LOG: DETECTED</span>
+                <div class="grid-3" style="grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem;">
+                    <div class="feature-card" style="padding: 1.5rem;">
+                        <strong class="text-red-500 block mb-1">Standard Sites</strong>
+                        <span class="text-sm text-gray-500">15+ Trackers per page</span>
                     </div>
-
-                    <h2 class="text-4xl md:text-6xl font-bold text-white mb-8 font-cyber leading-tight">
-                        THE WEB IS<br>
-                        <span class="glitch-wrapper">
-                            <span class="text-red-500 glitch-text" data-text="COMPROMISED">COMPROMISED</span>
-                        </span>
-                    </h2>
-
-                    <div class="space-y-6 font-tech text-xl text-gray-400 leading-relaxed max-w-lg">
-                        <p>Pop-ups. Trackers. Low-res streams. The current ecosystem is hostile to the user.</p>
-                        <p>You are not a product. <strong class="text-white border-b border-cyan-500/50 pb-1">Aniryx is
-                                your shield.</strong></p>
-                    </div>
-
-                    <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-                        <div class="holo-card p-5 border-l-4 border-l-red-500 interactable">
-                            <div class="flex items-center gap-3 text-red-400 font-bold font-code text-xs mb-2">
-                                <i data-lucide="shield-alert" class="w-4 h-4"></i> THREAT: HIGH
-                            </div>
-                            <p class="text-gray-500 text-sm font-tech">Standard sites contain 15+ trackers/page.</p>
-                        </div>
-                        <div class="holo-card p-5 border-l-4 border-l-cyan-500 interactable">
-                            <div class="flex items-center gap-3 text-cyan-400 font-bold font-code text-xs mb-2">
-                                <i data-lucide="shield-check" class="w-4 h-4"></i> ANIRYX STATUS
-                            </div>
-                            <p class="text-gray-500 text-sm font-tech">0 Trackers. 0 Ads. 100% Immersion.</p>
-                        </div>
+                    <div class="feature-card" style="padding: 1.5rem; border-color: var(--orange-primary);">
+                        <strong class="text-orange block mb-1">Aniryx</strong>
+                        <span class="text-sm text-gray-500">0 Trackers. 100% Pure.</span>
                     </div>
                 </div>
-
-                <!-- Visual Content with Anime Character -->
-                <div class="reveal order-1 lg:order-2 relative group interactable">
-                    <div
-                        class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-violet-500 rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200">
-                    </div>
-                    <div class="relative bg-[#050507] p-1 rounded-lg">
-                        <div
-                            class="bg-black/80 p-10 h-full relative overflow-hidden flex flex-col items-center justify-center min-h-[400px]">
-                            <!-- Grid Background inside card -->
-                            <div class="absolute inset-0"
-                                style="background-image: radial-gradient(#1a1a1a 1px, transparent 1px); background-size: 20px 20px; opacity: 0.5;">
-                            </div>
-
-                            <div class="absolute top-4 right-4 font-code text-[10px] text-cyan-500">SYS_ID: 001</div>
-
-                            <!-- Anime Character -->
-                            <img src="hero-character.jpg" alt="Anime Character"
-                                class="w-full max-w-sm rounded-lg opacity-90 group-hover:opacity-100 transition-opacity duration-300 relative z-10">
-                        </div>
-                    </div>
+            </div>
+            <div class="philosophy-image">
+                <div class="feature-card" style="padding: 1rem; transform: rotate(2deg);">
+                    <img src="hero-character.jpg" alt="Character" style="width: 100%; border-radius: 4px;">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- MODULES SECTION -->
-    <section id="features" class="py-32 px-6 relative">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-20 reveal border-b border-white/5 pb-6">
-                <div>
-                    <h2 class="text-4xl md:text-5xl font-bold text-white font-cyber">CORE MODULES</h2>
-                    <div class="h-1 w-24 bg-cyan-500 mt-4 shadow-[0_0_10px_#00f3ff]"></div>
+    <!-- FEATURES SECTION -->
+    <div class="section" id="features">
+        <div class="section-header">
+            <span class="section-subtitle">Core Modules</span>
+            <h2>Engineered For <span class="text-orange">Immersion</span></h2>
+        </div>
+
+        <div class="grid-3">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i data-lucide="monitor-play"></i>
                 </div>
-                <div class="font-code text-xs text-cyan-500/50 hidden md:block text-right">
-                    // LOADING ASSETS... [OK] <br> // RENDERING MODULES... [OK]
-                </div>
+                <h3>Cinematic Interface</h3>
+                <p>High-contrast dark mode engineered for late-night viewing. No distractions, just content.</p>
             </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i data-lucide="database"></i>
+                </div>
+                <h3>Centralized Index</h3>
+                <p>A unified database connecting you to external libraries instantly. Search once, find everywhere.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i data-lucide="smartphone"></i>
+                </div>
+                <h3>Mobile Native</h3>
+                <p>Optimized APK structure for fluid touch interaction. Swipes and taps feel instant and natural.</p>
+            </div>
+        </div>
+    </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="holo-card p-10 group reveal interactable" onmousemove="handleCardHover(event)">
-                    <div
-                        class="w-12 h-12 bg-cyan-900/20 rounded flex items-center justify-center mb-8 border border-cyan-500/20 group-hover:border-cyan-500/50 transition-colors">
-                        <i data-lucide="layout-dashboard" class="w-6 h-6 text-cyan-400"></i>
-                    </div>
-                    <h3
-                        class="text-2xl text-white font-tech font-bold mb-4 tracking-wide group-hover:text-cyan-200 transition-colors">
-                        CINEMATIC INTERFACE</h3>
-                    <p class="text-gray-400 text-sm font-light leading-relaxed">
-                        High-contrast dark mode engineered for late-night viewing. No distractions, just content.
-                    </p>
+    <!-- APP SHOWCASE CAROUSEL -->
+    <div class="carousel-section" id="showcase">
+        <div class="section-header">
+            <span class="section-subtitle">Interface Preview</span>
+            <h2>App <span class="text-orange">Showcase</span></h2>
+        </div>
+
+        <div class="screenshots-container">
+            <div class="screenshots-track">
+                <!-- 7 Original Screenshots -->
+                <div class="screenshot-card">
+                    <div class="screenshot-frame"><img src="screenshot1.jpg" alt="Screen 1" draggable="false"></div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-frame"><img src="screenshot2.jpg" alt="Screen 2" draggable="false"></div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-frame"><img src="screenshot3.jpg" alt="Screen 3" draggable="false"></div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-frame"><img src="screenshot4.jpg" alt="Screen 4" draggable="false"></div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-frame"><img src="screenshot5.jpg" alt="Screen 5" draggable="false"></div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-frame"><img src="screenshot6.jpg" alt="Screen 6" draggable="false"></div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-frame"><img src="screenshot7.jpg" alt="Screen 7" draggable="false"></div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="holo-card p-10 group reveal interactable" style="transition-delay: 0.1s"
-                    onmousemove="handleCardHover(event)">
-                    <div
-                        class="w-12 h-12 bg-violet-900/20 rounded flex items-center justify-center mb-8 border border-violet-500/20 group-hover:border-violet-500/50 transition-colors">
-                        <i data-lucide="database-zap" class="w-6 h-6 text-violet-400"></i>
-                    </div>
-                    <h3
-                        class="text-2xl text-white font-tech font-bold mb-4 tracking-wide group-hover:text-violet-200 transition-colors">
-                        CENTRALIZED INDEX</h3>
-                    <p class="text-gray-400 text-sm font-light leading-relaxed">
-                        A unified database connecting you to external libraries instantly. Search once, find everywhere.
-                    </p>
+                <!-- Duplicates for Infinite Loop -->
+                <div class="screenshot-card">
+                    <div class="screenshot-frame"><img src="screenshot1.jpg" alt="Screen 1" draggable="false"></div>
                 </div>
-
-                <!-- Card 3 -->
-                <div class="holo-card p-10 group reveal interactable" style="transition-delay: 0.2s"
-                    onmousemove="handleCardHover(event)">
-                    <div
-                        class="w-12 h-12 bg-pink-900/20 rounded flex items-center justify-center mb-8 border border-pink-500/20 group-hover:border-pink-500/50 transition-colors">
-                        <i data-lucide="smartphone" class="w-6 h-6 text-pink-400"></i>
-                    </div>
-                    <h3
-                        class="text-2xl text-white font-tech font-bold mb-4 tracking-wide group-hover:text-pink-200 transition-colors">
-                        MOBILE NATIVE</h3>
-                    <p class="text-gray-400 text-sm font-light leading-relaxed">
-                        Optimized APK structure for fluid touch interaction. Swipes and taps feel instant.
-                    </p>
+                <div class="screenshot-card">
+                    <div class="screenshot-frame"><img src="screenshot2.jpg" alt="Screen 2" draggable="false"></div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-frame"><img src="screenshot3.jpg" alt="Screen 3" draggable="false"></div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-frame"><img src="screenshot4.jpg" alt="Screen 4" draggable="false"></div>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="drag-hint">&lt; DRAG TO EXPLORE &gt;</div>
+    </div>
 
     <!-- VIDEO SECTION -->
-    <section class="py-32 px-6 relative border-t border-white/5 bg-[#030304]/40">
-        <div class="max-w-4xl mx-auto text-center reveal">
-            <h2 class="text-3xl md:text-4xl font-bold text-white font-cyber mb-6">EXPERIENCE ANIRYX</h2>
-            <p class="text-gray-400 text-lg font-tech mb-12">Watch our platform in action</p>
-
-            <div class="relative group interactable">
-                <div
-                    class="absolute inset-0 bg-cyan-500 blur-[60px] opacity-10 group-hover:opacity-20 transition-opacity duration-500">
-                </div>
-                <div
-                    class="relative bg-[#08080a] border border-cyan-500/30 p-6 hover:border-cyan-400/50 transition-colors duration-300 rounded-lg">
-                    <video controls class="w-full rounded-lg" poster="anime1.jpg">
-                        <source src="WhatsApp Video 2026-01-08 at 2.15.59 PM.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
+    <div class="section">
+        <div class="section-header">
+            <span class="section-subtitle">In Action</span>
+            <h2>Experience <span class="text-orange">Aniryx</span></h2>
         </div>
-    </section>
-
-    <!-- ACCESS SECTION -->
-    <section id="access" class="py-32 px-6 relative border-t border-white/5 bg-gradient-to-b from-[#050507] to-black">
-        <div class="max-w-4xl mx-auto text-center reveal">
-            <div
-                class="inline-block border border-cyan-500/50 bg-cyan-950/20 px-4 py-1 rounded-sm text-cyan-400 text-xs font-code mb-10">
-                PAYMENT_GATEWAY: SECURE
-            </div>
-
-            <h2 class="text-5xl md:text-7xl font-bold text-white font-cyber mb-6 tracking-tight">LIFETIME ACCESS</h2>
-            <p class="text-gray-400 text-xl font-tech mb-16 tracking-wide">Subscriptions are a relic of the past.</p>
-
-            <div class="relative group interactable max-w-lg mx-auto">
-                <div
-                    class="absolute inset-0 bg-cyan-500 blur-[80px] opacity-10 group-hover:opacity-20 transition-opacity duration-500">
-                </div>
-                <div
-                    class="relative bg-[#08080a] border border-cyan-500/30 p-12 hover:border-cyan-400/50 transition-colors duration-300">
-
-                    <!-- Decorative Corners -->
-                    <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-cyan-500"></div>
-                    <div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-cyan-500"></div>
-                    <div class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-cyan-500"></div>
-                    <div class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-cyan-500"></div>
-
-                    <div class="text-8xl font-bold text-white font-tech tracking-tighter">₹9</div>
-                    <div
-                        class="text-cyan-500 font-code text-sm tracking-[0.3em] mt-4 border-t border-cyan-500/20 pt-4 inline-block">
-                        ONE TIME UNLOCK</div>
-
-                    <div class="flex justify-center gap-6 mt-10 text-sm font-bold text-gray-300 font-tech uppercase">
-                        <span class="flex items-center gap-2 bg-white/5 px-3 py-1 rounded-sm"><i data-lucide="check"
-                                class="text-cyan-400 w-4 h-4"></i> No Recurring Fees</span>
-                        <span class="flex items-center gap-2 bg-white/5 px-3 py-1 rounded-sm"><i data-lucide="check"
-                                class="text-cyan-400 w-4 h-4"></i> Full Database</span>
-                    </div>
-                </div>
-            </div>
+        <div class="feature-card" style="padding: 1rem; max-width: 800px; margin: 0 auto;">
+            <video controls style="width: 100%; border-radius: 4px;">
+                <source src="WhatsApp Video 2026-01-08 at 2.15.59 PM.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
-    </section>
+    </div>
 
-    <!-- APP SCREENSHOTS SECTION -->
-    <section class="py-32 px-6 relative border-t border-white/5 bg-[#030304]/60">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16 reveal">
-                <div
-                    class="inline-block border border-cyan-500/50 bg-cyan-950/20 px-4 py-1 rounded-sm text-cyan-400 text-xs font-code mb-6">
-                    INTERFACE_PREVIEW
-                </div>
-                <h2 class="text-4xl md:text-5xl font-bold text-white font-cyber mb-4">APP SHOWCASE</h2>
-                <p class="text-gray-400 text-lg font-tech">Experience the premium interface</p>
-            </div>
+    <!-- DOWNLOAD / PRICING SECTION -->
+    <div class="section" id="download-section">
+        <div class="pricing-card feature-card">
+            <span class="section-subtitle">Lifetime Access</span>
+            <div class="price-tag"><span class="price-currency">₹</span>9</div>
+            <p class="text-gray-400 mb-8">One Time Unlock. No Subscriptions.</p>
 
-            <!-- Screenshots Carousel -->
-            <div class="screenshots-container reveal">
-                <div class="screenshots-track">
-                    <div class="screenshot-card interactable">
-                        <div class="screenshot-frame">
-                            <img src="screenshot1.jpg" alt="App Screenshot 1" draggable="false">
-                        </div>
-                    </div>
-                    <div class="screenshot-card interactable">
-                        <div class="screenshot-frame">
-                            <img src="screenshot2.jpg" alt="App Screenshot 2" draggable="false">
-                        </div>
-                    </div>
-                    <div class="screenshot-card interactable">
-                        <div class="screenshot-frame">
-                            <img src="screenshot3.jpg" alt="App Screenshot 3" draggable="false">
-                        </div>
-                    </div>
-                    <div class="screenshot-card interactable">
-                        <div class="screenshot-frame">
-                            <img src="screenshot4.jpg" alt="App Screenshot 4" draggable="false">
-                        </div>
-                    </div>
-                    <div class="screenshot-card interactable">
-                        <div class="screenshot-frame">
-                            <img src="screenshot5.jpg" alt="App Screenshot 5" draggable="false">
-                        </div>
-                    </div>
-                    <div class="screenshot-card interactable">
-                        <div class="screenshot-frame">
-                            <img src="screenshot6.jpg" alt="App Screenshot 6" draggable="false">
-                        </div>
-                    </div>
-                    <div class="screenshot-card interactable">
-                        <div class="screenshot-frame">
-                            <img src="screenshot7.jpg" alt="App Screenshot 7" draggable="false">
-                        </div>
-                    </div>
-                    <!-- Duplicate for infinite loop effect -->
-                    <div class="screenshot-card interactable">
-                        <div class="screenshot-frame">
-                            <img src="screenshot1.jpg" alt="App Screenshot 1" draggable="false">
-                        </div>
-                    </div>
-                    <div class="screenshot-card interactable">
-                        <div class="screenshot-frame">
-                            <img src="screenshot2.jpg" alt="App Screenshot 2" draggable="false">
-                        </div>
-                    </div>
-                    <div class="screenshot-card interactable">
-                        <div class="screenshot-frame">
-                            <img src="screenshot3.jpg" alt="App Screenshot 3" draggable="false">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a href="https://www.mediafire.com/file/mete9yrhp3xm2fe/aniryx.apk/file" target="_blank" class="btn-primary"
+                style="width: 100%; justify-content: center; margin-bottom: 1rem;">
+                <i data-lucide="download"></i> Download Aniryx.apk
+            </a>
 
-            <p class="text-center text-cyan-500 text-sm font-code mt-8 reveal">
-                &lt;DRAG TO EXPLORE&gt;
+            <p class="text-xs text-gray-600 mt-4">
+                Disclaimer: Aniryx is a discovery tool. No media hosted locally.<br>
+                Copyright belongs to respective owners.
             </p>
         </div>
-    </section>
-
-    <!-- DOWNLOAD SECTION -->
-    <section id="download-section" class="py-40 px-6 text-center">
-        <div class="max-w-2xl mx-auto reveal">
-            <h2 class="text-3xl text-white font-tech mb-10 uppercase tracking-[0.2em]">System Ready For Deployment</h2>
-
-            <div
-                class="p-[1px] bg-gradient-to-r from-cyan-500/50 via-violet-500/50 to-cyan-500/50 rounded-lg interactable group">
-                <div class="bg-[#050507] p-10 rounded-lg relative overflow-hidden">
-                    <div class="absolute inset-0 bg-cyan-500/5 group-hover:bg-cyan-500/10 transition-colors"></div>
-
-                    <div class="relative z-10 flex justify-between items-center border-b border-gray-800 pb-4 mb-8">
-                        <span class="text-xs text-gray-500 font-code">FILE: ANIRYX.APK</span>
-                        <span class="text-xs text-green-500 font-code flex items-center gap-2"><span
-                                class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> ONLINE</span>
-                    </div>
-
-                    <a href="https://www.mediafire.com/file/mete9yrhp3xm2fe/aniryx.apk/file" target="_blank"
-                        class="relative z-10 w-full py-6 flex items-center justify-center gap-4 text-xl font-bold font-tech text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500 hover:text-black transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(0,243,255,0.3)]">
-                        <i data-lucide="download" class="w-6 h-6"></i>
-                        <span>INITIALIZE DOWNLOAD</span>
-                    </a>
-                </div>
-            </div>
-
-            <p class="mt-10 text-[10px] text-gray-600 font-code max-w-lg mx-auto leading-relaxed">
-                DISCLAIMER: ANIRYX IS A DISCOVERY TOOL. NO MEDIA HOSTED LOCALLY.<br>
-                COPYRIGHT BELONGS TO RESPECTIVE OWNERS.
-            </p>
-        </div>
-    </section>
+    </div>
 
     <!-- FOOTER -->
-    <footer class="border-t border-white/5 py-12 bg-black text-center relative z-10">
-        <div class="flex flex-col items-center justify-center gap-6">
-            <i data-lucide="cpu" class="w-8 h-8 text-cyan-900"></i>
-            <p class="text-gray-600 font-tech text-sm uppercase tracking-[0.3em]">
-                &copy; 2026 ANIRYX PROJECT
-            </p>
-            <div class="text-[10px] text-gray-600 font-code border border-white/5 px-4 py-2 rounded-full">
-                ENGINEERED BY <a href="https://share.google/fsx57W460BpqxLKUg" target="_blank"
-                    class="text-cyan-800 hover:text-cyan-400 transition-colors uppercase font-bold">TECHED STUDIOS</a>
-            </div>
-        </div>
+    <footer>
+        <div class="footer-logo">ANIRYX</div>
+        <p>&copy; 2026 Aniryx Project. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem;">
+            Engineered by <a href="https://share.google/fsx57W460BpqxLKUg" target="_blank" class="text-orange">Teched
+                Studios</a>
+        </p>
     </footer>
 
     <script src="cyberpunk.js"></script>

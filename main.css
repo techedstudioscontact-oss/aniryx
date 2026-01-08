@@ -163,13 +163,18 @@ nav {
    HERO SECTION
 ======================================== */
 .hero-section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    /* changed from center to prevent top clipping */
     justify-content: center;
     text-align: center;
     position: relative;
     padding: 0 1rem;
+    padding-top: 140px;
+    /* Increased padding to clear navbar */
+    padding-bottom: 4rem;
+    /* Add bottom padding for scroll */
 }
 
 .hero-content {

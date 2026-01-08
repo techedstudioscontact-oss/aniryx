@@ -182,9 +182,8 @@ nav {
     font-weight: 700;
     line-height: 1;
     margin-bottom: 1rem;
-    background: linear-gradient(180deg, #fff, #ccc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
+    /* Fallback/Default */
 }
 
 .hero-subtitle {
